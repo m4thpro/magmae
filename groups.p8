@@ -75,10 +75,11 @@ function _update()
 
       if block.you then
 	 if (block.dx == 0) and (block.dy == 0) then
-	    if (btn(0)) then block.dx=-1 end
-	    if (btn(1)) then block.dx= 1 end
-	    if (btn(2)) then block.dy=-1 end
-	    if (btn(3)) then block.dy= 1 end
+	    local speed = 2
+	    if (btnp(0)) then block.dx=-speed end
+	    if (btnp(1)) then block.dx= speed end
+	    if (btnp(2)) then block.dy=-speed end
+	    if (btnp(3)) then block.dy= speed end
             
 	    -- stay pointing in movement direction
 	    if block.dx < 0 then
