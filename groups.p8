@@ -3,7 +3,7 @@ version 18
 __lua__
 -- some group theory
 -- by kisonecat
-cartdata("kisonecat_algeblock_1")
+cartdata("kisonecat_magmae_1")
 
 blocks = {}
 
