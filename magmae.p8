@@ -418,10 +418,12 @@ function _draw_playing()
       end
    end
 
+   rectfill( 0, 127 - 7 - 7, 127, 127, 0 )
+   line(0, 127 - 7 - 7, 127, 127 - 7 - 7, 6 )
    if level <= #level_names then
-      print("level " .. level .. ": " .. level_names[level], 1, 128 - 7 - 6, 15 )
+      print("level " .. level .. ": " .. level_names[level], 1, 128 - 7 - 6, 7 )
    end
-   print("🅾️ undo ❎ restart", 1, 128-7, 15 )
+   print("🅾️ undo | ❎ restart", 1, 128-7, 5 )
 
 end
 
